@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+</head>
+<body>
+    <h1>Taller 2</h1>
+
+    <script>
+        //Crear una función flecha que recibe un número y muestre su cubo con un console.log.
+        const mostrarCubo = (numero) => {
+            console.log("El cubo de ", numero , "es : ",numero ** 3 ,".");
+        };
+
+
+        mostrarCubo(3);
+
+    </script>
+
+    <script>
+        // Crear una función flecha que recibe la velocidad en Km/hora y la devuelva en metros/hora. Recoger el valor devuelto y mostrarlo con un console.log.
+        const kmaMh = (velocidad) => {
+            console.log("la conversión de ",velocidad, "km/h  es de  : ", velocidad * 1000, " m/h." );
+        };
+
+        kmaMh (60);
+
+    </script>
+
+    <script>
+
+        //Crear una función flecha que recibe el ancho y el alto de un rectángulo y devuelva su área.
+
+        const area = (base, altura) => {
+            console.log(`El área del rectángulo con base ${base} cm y altura ${altura} cm es de ${base * altura} cm2.`);
+        };
+
+        area (10,20);
+
+    </script>
+
+    <script>
+       //Crear una función flecha que recibe la base y la altura de un triángulo y devuelva su área.
+       const areaTr = (base, altura) =>{
+            return 0.5 * base * altura;
+       };
+
+        const base = (10);
+        const altura = (20);
+
+        const areas = areaTr(base , altura)
+
+        console.log(`El area del triangulo con base ${base}cm y altura ${altura}cm es de : ${areas} cm2 `)
+
+    </script>
+
+    <script>
+        // PROGRAMACIÓN WEB =>
+        //Escribir una función llamada contrasenaValida que reciba un string y retorne true si el string es igual a "2Fj(jjbFsuj" o "eoZiugBf&g9". De lo contrario debe retornar false.
+
+        const contrasenaValida = (contraseña) => {
+            if (contraseña ===  "2Fj(jjbFsuj" || contraseña === "eoZiugBf&g9") {
+                return true;
+            } else {
+                return false;
+            }
+
+        };
+
+        console.log(contrasenaValida("2Fj(jjbFsuj"))
+
+
+    </script>
+
+    <script>
+        /*Escribir una función llamada calcularImpuestos que reciba dos argumentos numéricos: edad e ingresos. Si edad es igual o mayor a 18 y los ingresos son iguales o mayores
+        a 1000 debe retornar ingresos * 40%. De lo contrario retornar 0.*/
+
+        const calcularImpuestos = (edad, ingresos) => {
+            if (edad >= 18 && ingresos >= 1000 ){
+                return ingresos * 0.40;
+            } else {
+                return 0 ;
+
+
+            }
+
+        };
+
+        console.log(calcularImpuestos(18, 1000))
+
+
+    </script>
+
+</body>
+</html>
